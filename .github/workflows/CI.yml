@@ -35,4 +35,4 @@ jobs:
 
     - name: Test with pytest (Run unit tests)
       run: |
-        pytest
+        python -m pytest
