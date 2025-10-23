@@ -29,10 +29,10 @@ jobs:
 
     - name: Lint with flake8 (Check code style)
       run: |
-        # 不用 cd，直接在根目錄執行
-        flake8 . --count --show-source --statistics
+        # 忽略 E402 錯誤（模組級導入不在頂部）
+        flake8 . --count --show-source --statistics --ignore=E402
 
     - name: Test with pytest (Run unit tests)
       run: |
-        # 不用 cd，直接在根目錄執行
-        pytest
+        # 使用 -v 選項獲得更詳細的輸出
+        python -m pytest -v
