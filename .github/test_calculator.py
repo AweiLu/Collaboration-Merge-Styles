@@ -1,10 +1,5 @@
 # test_calculator.py
 import pytest
-import sys
-import os
-
-# 將 .github 目錄添加到 Python 路徑
-sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from calculator import add, subtract, multiply, divide
 
 

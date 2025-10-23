@@ -31,8 +31,8 @@ jobs:
     - name: Lint with flake8 (Check code style)
       run: |
         # 檢查風格和錯誤
-        flake8 . --count --show-source --statistics
+        cd .github && flake8 . --count --show-source --statistics
 
     - name: Test with pytest (Run unit tests)
       run: |
-        python -m pytest
+        cd .github && python -m pytest
