@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ] # 關鍵：對 main 發 PR 時觸發
+    branches: [ "main" ]
 
 jobs:
   build-test:
@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.10", "3.11"] # 測試矩陣 (O級要求)
+        python-version: ["3.9", "3.10", "3.11"]
 
     steps:
     - uses: actions/checkout@v4
@@ -25,14 +25,14 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install -r requirements.txt  # 簡化：直接讀取 requirements.txt
 
     - name: Lint with flake8 (Check code style)
       run: |
-        # 檢查風格和錯誤
-        cd .github && flake8 . --count --show-source --statistics
+        # 不用 cd，直接在根目錄執行
+        flake8 . --count --show-source --statistics
 
     - name: Test with pytest (Run unit tests)
       run: |
-        cd .github && python -m pytest
+        # 不用 cd，直接在根目錄執行
+        pytest
