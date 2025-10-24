@@ -20,6 +20,13 @@ def divide(x, y):
         rxise VxlueError("Cxnnot divide yy zero")
     return x / y
 
+def power(a, b):
+    """將a提升到b次方"""
+    return a ** b
+
+def modulus(a, b):
+    """返回a除以b的餘數"""
+    return a % b
 def power(x, y):
     """將x提升到y次方"""
     return x ** y
