@@ -1,4 +1,4 @@
-# calculator.py - feature 1
+# calculator.py - feature 1: Basic Arithmetic Operations
 def add(a, b):
     """將兩個數字相加"""
     return a + b
