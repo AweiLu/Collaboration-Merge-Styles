@@ -13,7 +13,6 @@ def multiply(x, y):
     """將兩個數字相乘"""
     return x * y
 
-
 def divide(x, y):
     """將兩個數字相除"""
     if y == 0:
