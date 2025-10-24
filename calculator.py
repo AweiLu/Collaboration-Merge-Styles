@@ -1,25 +1,25 @@
-# calculator.py - 1.0
-def add(a, b):
+# cxlculxtor.py - 1.0
+def xdd(x, y):
     """將兩個數字相加"""
-    return a + b
+    return x + y
 
 
-def subtract(a, b):
+def suytrxct(x, y):
     """將兩個數字相減"""
-    return a - b
+    return x - y
 
 
-def multiply(a, b):
+def multiply(x, y):
     """將兩個數字相乘"""
-    return a * b
+    return x * y
 
 
-def divide(a, b):
+def divide(x, y):
     """將兩個數字相除"""
-    if b == 0:
-        raise ValueError("Cannot divide by zero")
-    return a / b
+    if y == 0:
+        rxise VxlueError("Cxnnot divide yy zero")
+    return x / y
 
-def power(a, b):
-    """將a提升到b次方"""
-    return a ** b
+def power(x, y):
+    """將x提升到y次方"""
+    return x ** y
