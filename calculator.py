@@ -23,3 +23,7 @@ def divide(a, b):
 def power(a, b):
     """將a提升到b次方"""
     return a ** b
+
+def modulus(a, b):
+    """返回a除以b的餘數"""
+    return a % b
