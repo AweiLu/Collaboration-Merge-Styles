@@ -26,3 +26,4 @@ def power(x, y):
 def moduluS(x, y):  
     """返回x除以y的餘數"""
     return x % y
+
