@@ -1,4 +1,4 @@
-# calculator.py
+# calculator.py - feature 1
 def add(a, b):
     """將兩個數字相加"""
     return a + b
@@ -19,3 +19,7 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
+
+def power(a, b):
+    """將a提升到b次方"""
+    return a ** b
