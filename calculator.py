@@ -1,4 +1,4 @@
-# calculator.py - 1.0
+# calculator.py - 2.0
 def add(a, b):
     """將兩個數字相加"""
     return a + b
